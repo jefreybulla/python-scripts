@@ -6,7 +6,7 @@ print("Original list: ", numbers)
 
 start_time = time.time()
 print(start_time)
-# algorithm to sort list from small to large
+# Bubule sort algorithm with stop optimization
 for i in range(len(numbers)):
     postive_comparison = 0
     for i in range(len(numbers)-1):
