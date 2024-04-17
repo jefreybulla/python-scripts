@@ -11,4 +11,6 @@ python -V
 ```
 
 ## Run scripts and tests
-`python <scrip_name>.py`
+```
+python <scrip_name>.py
+```
