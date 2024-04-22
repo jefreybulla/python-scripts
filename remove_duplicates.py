@@ -15,7 +15,7 @@ nums = [1,1,2,2,2,3,3,4,5,5,5,6]
 
 print(nums)
 
-# strategy: 1 use a dictionary to store keys as the values and counts as the keys
+# strategy 1: use a dictionary to store keys as the values and counts as the keys
 d = {}
 for i in range(len(nums)):
     d[nums[i]] = 1
@@ -29,7 +29,6 @@ print(k)
 
 # strategy 2: change value of duplicates to a value I don't care about (>100) then sort
 n2 = [1,1,2,2,2,3,3,4,5,5,5,6]
-marked_for_delation = []
 duplicates_count = 0
 for i in range(len(n2)-1):
     if n2[i] == n2[i+1]:
@@ -39,4 +38,3 @@ n2 = sorted(n2)
 print(n2)
 k = len(n2) - duplicates_count
 print(k)
-

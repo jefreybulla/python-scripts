@@ -44,3 +44,11 @@ numbers.pop(1)
 print(numbers)
 
 # more examples https://www.freecodecamp.org/news/python-array-tutorial-define-index-methods/
+
+l = [1,2,3,4,5]
+print('shifting left')
+l.append(l.pop(0))
+print(l)
+print('shifting right')
+l.insert(0, l.pop())
+print(l)
