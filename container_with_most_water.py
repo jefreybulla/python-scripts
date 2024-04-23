@@ -94,7 +94,7 @@ print('max_area ->')
 print(max_area)
 end_time = time.time()
 print("--- %s seconds ---" %(end_time - start_time))
-# Execuion time for large list:  ~68 seconds
+# Execuion time for large list (20k elements):  ~68 seconds
 
 
 '''
@@ -145,7 +145,7 @@ print('max_area ->')
 print(max_area)
 end_time = time.time()
 print("--- %s seconds ---" %(end_time - start_time))
-# Execuion time for large list:  ~67 seconds
+# Execuion time for large list (20k elements):  ~67 seconds
 
 
 
@@ -207,7 +207,7 @@ print('max_area ->')
 print(max_area)
 end_time = time.time()
 print("--- %s seconds ---" %(end_time - start_time))
-# Execuion time for large list:  ~102 seconds
+# Execuion time for large list(20k elements):  ~102 seconds
 
 
 '''
@@ -250,4 +250,4 @@ while True:
 print (max_area)
 end_time = time.time()
 print("--- %s seconds ---" %(end_time - start_time))
-# Execuion time for large list: 0.016910076141357422 s !!!
+# Execuion time for large list(20k elements): 0.016910076141357422 s !!!

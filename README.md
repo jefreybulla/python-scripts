@@ -2,7 +2,7 @@
 Python scripts
 
 
-## Install dependencies
+## Install python
 ```
 brew install pyenv
 pyenv install 3
