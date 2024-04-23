@@ -2,6 +2,19 @@
 # Search Insert Position
 Given a sorted array of distinct integers and a target value, return the index if the target is found. If not, return the index where it would be if it were inserted in order.
 
+Example 1:
+
+Input: nums = [1,3,5,6], target = 5
+Output: 2
+Example 2:
+
+Input: nums = [1,3,5,6], target = 2
+Output: 1
+Example 3:
+
+Input: nums = [1,3,5,6], target = 7
+Output: 4
+
 You must write an algorithm with O(log n) runtime complexity.
 '''
 
@@ -28,6 +41,8 @@ search_element(nums,target)
 
 
 # O(log n solution)
+# It splits the list recursively in half until it finds the solution
+
 print('O(log n solution ->)')
 #nums = [1,3,5,6]
 #nums = [1,2,3,4,5]
@@ -59,6 +74,7 @@ def slice_search(list_input):
         print(sublist)
         skipped_elements = skipped_elements + middle_pointer
     if len(sublist) <=3:
+        # use the slow algoruthm for small lists
         solution = search_element(sublist, target) + skipped_elements
         print('solution found!')
         print(solution)

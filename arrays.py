@@ -4,7 +4,7 @@
 
 import array as arr 
 
-# i specifies the intefer ty[e. Use f for float
+# i specifies the intefer type. Use f for float
 numbers = arr.array('i',[10,20,30])
 
 print(numbers[-1]) #gets last item
