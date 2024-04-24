@@ -47,7 +47,7 @@ print(end_time - start_time)
 '''
 # strategy 3: 
 Use a pointer that checks every element. 
-When finding that next element is duplicate, shift element left chaning its value to a value I don't care
+When finding that next element is duplicate, shift element left changing its value to a value I don't care
 O(n)
 '''
 print('strategy 3')
