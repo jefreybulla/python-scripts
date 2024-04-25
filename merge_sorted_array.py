@@ -57,15 +57,10 @@ print(nums1)
 end_time = time.time()
 print(f"execution time: {end_time - start_time}")
 
-# to-do: 
-# - check execution time
-# - compare to using `for i in nums
-# come up with a faster algorithm (m+n) ?? two pointers??
-
 
 '''
 Approach 2: 
-Two pointers: one pointer for nums1, one pointer for numbs2
+Two pointers: one pointer for nums1, one pointer for nums2
 Pointer move from left to right comparing and adding elements to nums1 if nums2[j] < nums[i]
 O(n+m)
 '''
