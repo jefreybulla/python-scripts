@@ -90,3 +90,49 @@ end_time = time.time()
 print(result)
 print(end_time - start_time)
 # Faster approach
+
+
+'''
+Extended problem: now you can buy and sell the stock more than once. Calculate the max profit
+Example 1:
+
+Input: prices = [7,1,5,3,6,4]
+Output: 7
+Explanation: Buy on day 2 (price = 1) and sell on day 3 (price = 5), profit = 5-1 = 4.
+Then buy on day 4 (price = 3) and sell on day 5 (price = 6), profit = 6-3 = 3.
+Total profit is 4 + 3 = 7.
+'''
+
+print('Extended problem: day trading profit')
+
+'''
+Approach: 
+1. Use two pointers. Pointer1 starts from 0. Pointer2 starts from 1
+2. If prices[pointer1] <= prices[pointer2] record profit and move pointer2. Save profit
+3. Use a new array from the element to the last element and run the process iteratively. 
+4. If prices[pointer1] > prices[pointer2] move pointer1 to pointer2, move pointer2 one spot
+
+
+'''
+
+def day_trading_profit(prices):
+    pointer1 = 0
+    pointer2 = 1
+    mp = 0
+    profits = []
+    total_profit = 0
+    while pointer2 <= len(prices) - 1:
+        if prices[pointer1] < prices[pointer2]:
+            local_profit = prices[pointer2] - prices[pointer1]
+            pointer1 += 1
+            pointer2 += 1
+            total_profit = total_profit + local_profit
+        else:
+            pointer1 = pointer2
+            pointer2 += 1
+    return total_profit
+
+
+prices = [7,1,5,3,6,4]
+result= day_trading_profit(prices)
+print(result)
