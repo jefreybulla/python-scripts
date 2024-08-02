@@ -23,6 +23,11 @@ We cannot access or change an element of a set using indexing or slicing. The se
 student_id.add(122)
 print(student_id)
 
+student_id.remove(122)
+print(student_id)
+
+# Check is element exists in set
+print(112 in student_id)   # True
 
 companies = {'Lacoste', 'Ralph Lauren'}
 tech_companies = ['apple', 'google', 'apple']
