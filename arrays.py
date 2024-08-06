@@ -52,3 +52,17 @@ print(l)
 print('shifting right')
 l.insert(0, l.pop())
 print(l)
+
+
+## Numpy arrays 
+import numpy
+
+print('Numpy arrays')
+a = numpy.array([2,4,6])
+print(a)
+# divide each element by 2
+a2 = a/2
+print(a2)
+# convert each element from float to integer 
+a2 = a2.astype(numpy.int64)
+print(a2)
