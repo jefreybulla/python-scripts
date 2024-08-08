@@ -59,17 +59,13 @@ def canCompleteCircuit(gas, cost):
         if (gas[loops] == 0):
             continue
         if(checkCompletion(gas, cost)):
-            print('found solution!')
+            # found solution
             return loops
         else:
             loops += 1
             gas.append(gas.pop(0))
-            #print(gas)
             cost.append(cost.pop(0))
-            #print(cost)
-            
     return -1
-    #return result
 
 #gas = [1,2,3,4,5]
 #cost = [3,4,5,1,2]
