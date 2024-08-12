@@ -31,3 +31,9 @@ str.title() # 'Jack And Jill'
 
 # Replaces matches of a substring with another
 str.replace("J", "P") # 'Pack and Pill'
+
+
+# Find substring index 
+print('find subtrings')
+str = "Yes, let's go"
+print(str.find('go'))   #11
