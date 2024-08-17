@@ -37,3 +37,10 @@ str.replace("J", "P") # 'Pack and Pill'
 print('find subtrings')
 str = "Yes, let's go"
 print(str.find('go'))   #11
+
+
+# Reverse string
+print('reverse string')
+str_reversed = str[::-1]
+print(str_reversed) 
+
