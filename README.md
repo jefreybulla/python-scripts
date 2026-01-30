@@ -1,16 +1,34 @@
 # python-scripts
 Python scripts
 
+## Set up
+Install python 3 if needed.
 
-## Install python
+Then create environment with 
 ```
-brew install pyenv
-pyenv install 3
-pyenv global 3
-python -V
+python3 -m venv python-scripts-env
 ```
+
+Use Python environment with
+```
+source python-scripts-env//bin/activate
+```
+
+Update pip
+```
+pip install --upgrade pip
+```
+
+Open project in VS code
+
+Exit Python environment with
+```
+deactivate
+```
+
 
 ## Run scripts and tests
 ```
 python <script_name>.py
 ```
+
