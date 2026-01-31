@@ -79,3 +79,14 @@ print(multiplied)
 print('# inverse of a matrix #')
 inverse = numpy.linalg.inv(multiplied)
 print(inverse)
+
+print('######')
+b = numpy.array([[1, -1],[-1, 1]])
+c = inverse @ b     # 2x2 matrix
+print(c)
+
+print('# Eigen Results #')
+# Finding eigenvalues and eigenvectors
+eigen_values, eigen_vectors = numpy.linalg.eig(c)
+print(eigen_values)
+print(eigen_vectors)
